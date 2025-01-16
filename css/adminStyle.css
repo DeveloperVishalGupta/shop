@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --greenTheme: #1ab293;
+    --LightgreenTheme: #c1f8ed;
+    --whiteColor:#fff;
+    --backColor:#000;
+    --midiumFontWeight :500;
+    --textLightGray: rgb(163, 160, 160);
+    --robotoFont: 'Roboto', sans-serif;
+    --boxShadow: 0px 0px 6px lightgray;
+}
+*{
+    font-family: var(--robotoFont);
+}
+.boxShadow{
+    box-shadow: var(--boxShadow);
+}
+
+/* CSS for all  */
+
+.form-control:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none !important;
+    /* border: black; */
+}
+a:hover{
+    text-decoration: none !important;
+    color: #000 !important;
+}
+a{
+    color: #000 !important; 
+}
+.row{
+    margin: 0 !important;
+}
+.dropdown-item:active, .dropdown-item:hover {
+    color: #000 !important;
+    font-weight: 600;
+    background-color: var(--LightgreenTheme) !important;
+    text-decoration: none;
+}
+.AddProductBtn{
+    background-color: var(--greenTheme);
+}
+.btn:active{
+    background-color: #4ae5c6;
+}
+.mediumFontWeight{
+    font-weight: var(--midiumFontWeight);
+}
+.textLightGray{
+    color: var(--textLightGray);
+}
+.menuList:hover{
+ background-color: var(--LightgreenTheme);
+ color: var(--BlackColor);
+ font-weight: var(--midiumFontWeight);
+}
+
+
+@media only screen and (min-width: 600px) {
+    .adminMenu{
+        height: 100vh;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .menus{
+        margin-bottom: 12rem !important;
+    }
+  }
